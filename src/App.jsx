@@ -7,6 +7,9 @@ import Process from './Navbar/Process'
 import About from './Navbar/About'
 import Services from './Navbar/Services'
 import Communication from './Navbar/Communication'
+import Enquiry from './Navbar/Enquiry'
+import Footer from './Navbar/Footer'
+
 function App() {
   return (
     <>
@@ -16,6 +19,8 @@ function App() {
      <About/>
      <Services/>
      <Communication/>
+     <Enquiry/>
+     <Footer/>
       </div>
     </>
   )
