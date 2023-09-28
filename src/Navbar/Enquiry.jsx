@@ -20,12 +20,12 @@ Businesses generally promote their brand, products, and services by identifying 
 
 <input type="text" placeholder="Enter your email here" className=" w-[690px] h-full text-[16px] px-6"/>
 
-<input type="submt" value="Subscribe" className=" absolute left-[42%] h-[60px] py-2 rounded-[6px] bg-[#060640] text-white text-center text-[14px] w-[150px] "/>
+<input type="submt" value="Subscribe" className=" absolute left-[42%] h-[60px] py-2 rounded-[6px] bg-[#060640] text-white text-center text-[14px] w-[150px] cursor-pointer"/>
 </div>
 </div>
 
 <div>
-    <img src={Picture} className='w-[353px] h-[436px] absolute top-[524.25vh]'/>
+    <img src={Picture} className='w-[353px] h-[436px] absolute top-[557.5vh]'/>
 </div>
         </div>
         </div>

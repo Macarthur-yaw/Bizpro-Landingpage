@@ -2,19 +2,69 @@ import aboutPicture from '../assets/About.png'
 import Shield from '../assets/shield.svg'
 import Rating from '../assets/rating.svg'
 import Charts from '../assets/Frame 13.png'
+import {motion,useAnimation} from 'framer-motion'
+import {useInView} from 'react-intersection-observer'
+import { useEffect } from 'react'
 
 export default function About(){
+const controls=useAnimation();
 
+const [ref,inView]=useInView();
+
+useEffect(()=>{
+if(inView){
+    controls.start("visible");
+}
+else{
+    controls.start("hidden");
+}
+
+},[controls,inView])
+    const initialAnimate={
+        hidden:{
+            opacity:0,
+        
+            
+        },
+        visible:{
+            opacity:1,
+            
+            transition:{
+                duration:1.01
+            }
+        }
+
+    }
+
+    const imageAnimate={
+        hidden:{
+            opacity:0,
+            x:"100%"
+        },
+        visible:{
+            opacity:1,
+            x:"0%",
+            transition:{duration:1.01}
+
+        }
+    }
     return (
         <div className='flex flex-row p-16 items-center justify-between'>
-    <div className='flex flex-col w-1/3 gap-4 '>       
-<div id="mainHeader">
-    <h1 className='text-5xl font-semibold text-indi'>
+    < motion.div
+    animate={controls}
+    ref={ref} 
+    variants={initialAnimate}
+    initial="hidden"
+    
+    className='flex flex-col w-1/3 gap-[12px] '>       
+<div
+id="mainHeader">
+    <h1 className='text-[45px] font-bold text-indi'>
         About us
     </h1>
 </div>
 
-<div id="subHeader" className='text-lg text-[#9090A7]'>
+<div id="subHeader" className='text-[16px] text-[#9090A7] w-[431px]'>
 No wonder that promotion strategy is one of the most important processes in marketing.
 In fact, it supports your marketing voices to reach your target audience, creates interest, and helps you to engage with them.
 
@@ -50,11 +100,16 @@ In fact, it supports your marketing voices to reach your target audience, create
 
 
 </div>
-</div> 
+</motion.div> 
 
 
 <div id="aboutPicture">
-<img src={aboutPicture} alt='a description of an about picture' className=' rounded-lg'/>
+<motion.img 
+ref={ref}
+variants={imageAnimate}
+animate={controls}
+initial="hidden"
+src={aboutPicture} alt='a description of an about picture' className=' rounded-lg'/>
 <img src={Charts} alt='chart ' className='absolute left-[38%] top-[265vh]'/>
 </div>
         </div>

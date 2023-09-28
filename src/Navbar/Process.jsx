@@ -1,53 +1,67 @@
+import faPackage from '../assets/box.png'
+import faStatistics from '../assets/statistics.png'
+import  FaCalendar  from '../assets/calendar.png'
 import {FaGift,FaCalendarCheck,FaChartBar} from 'react-icons/fa'
 const Process = () => {
     return ( 
-        <div>
-            <div id="header" className='flex flex-col items-center gap-16 '>
-<h1 className='font-semibold text-7xl'>
+        <div className='flex flex-col gap-[70px] '>
+            <div id="header" className='flex flex-col items-center gap-[12px]  '>
+<h1 className='font-bold text-[45px] leading-[55px]'>
 How it works.
 </h1>
-<div>
+<div className='text-[#9090A7] text-[16px] w-[431px] text-center'>
     Business generally promote the brand,products and services by adding audiences.
 </div>
 
-<div  id='subabout'>
 
 
             </div>
 
-<div id="boxes" className='flex flex-row justify-between  gap-6 p-8'>
+<div id="boxes" className='flex flex-row justify-around p-2 gap-[30px]'>
 
-<div id="Package" className=' shadow-md  h-66 w-96 flex flex-col gap-4  p-4 '>
-
-<FaGift className='text-4xl'/>
-<h1 className='text-2xl font-semibold'>Choose Package</h1>
-
-<h3 className='text-lg text-[#9090A7]'>Business generally promote their brand,products and services by identifying the audiences or users.</h3>
+<div id="Package" className=' shadow-md   w-[370px] h-[308px] flex flex-col gap-4  p-[30px] rounded-[14px]'>
+<div className='border-2 border-[#ECF9FF] w-[70px] h-[70px] rounded-[10px]  bg-[#ECF9FF]'>
+<img src={faPackage} className='w-[40px] h-[40px]  mx-auto mt-2'/>
 </div>
+<div className='flex flex-col gap-[10px]'>
+<h1 className='text-[24px] font-semibold text-[#060640]'>Choose Package</h1>
 
-
-
-<div id="Package" className=' shadow-md  h-60 w-96  p-4 gap-6'>
-
-<FaCalendarCheck className='text-4xl'/>
-<h1 className='text-2xl font-semibold'>Schedule Appointment</h1>
-
-<h3 className='text-lg text-[#9090A7]'>Business generally promote their brand,products and services by identifying the audiences or users.</h3>
-</div>
-
-
-
-<div id="Package" className=' shadow-md  h-60 w-96  p-4 gap-4'>
-
-<FaChartBar className='text-4xl'/>
-<h1 className='text-2xl font-semibold'>Grow together</h1>
-
-<h3 className='text-lg text-[#9090A7]'>Business generally promote their brand,products and services by identifying the audiences or users.</h3>
-</div>
-
+<h3 className='text-[16px] text-[#9090A7]'>Business generally promote their brand,products and services by identifying the audiences or users.</h3>
 </div>
 </div>
-        </div>
+
+
+
+<div id="Package" className=' shadow-md   w-[370px] h-[308px]  p-[30px] rounded-[14px] flex flex-col gap-4'>
+<div className='border-2 border-[#ECF9FF] bg-[#ECF9FF] w-[70px] h-[70px] rounded-[10px] '>
+<img src={FaCalendar} className='w-[40px] h-[40px] mx-auto mt-2'/>
+</div>
+<div className='flex flex-col gap-[10px]'>
+<h1 className='text-[24px] font-semibold text-[#060640]'>Schedule Appointment</h1>
+
+<h3 className='text-[16px] text-[#9090A7]'>Business generally promote their brand,products and services by identifying the audiences or users.</h3>
+</div>
+</div>
+
+
+
+<div id="Package" className=' shadow-md w-[370px] h-[308px]  p-[30px] rounded-[14px] flex flex-col gap-4'>
+
+<div className='border-2 border-[#ECF9FF] bg-[#ECF9FF] w-[70px] h-[70px] rounded-[10px] '>
+<img src={faStatistics} className='w-[40px] h-[40px] mx-auto mt-2'/>
+</div>
+<div className='flex flex-col gap-[10px]'>
+
+
+<h1 className='text-[24px] font-semibold text-[#060640]'>Grow together</h1>
+
+<h3 className='text-[16px] text-[#9090A7]'>Business generally promote their brand,products and services by identifying the audiences or users.</h3>
+</div>
+</div>
+
+</div>
+</div>
+        // </div>
      );
 }
  
