@@ -22,7 +22,7 @@ const hideMenu=()=>{
     controls.start("hidden")
 }
     return (
-        <div className="border-2 w-[1170px] max-md:w-[100%] max-md:p-2  h-[100px] max-md:h-[20%] max-md:rounded-none shadow-md mx-auto items-center   p-6  rounded-[10px] flex flex-row justify-between  bg-white border-white text-indi max-md:rounded-sm
+        <div className="border-2 w-[1170px] max-md:w-[100%] max-md:p-5  h-[100px] max-md:h-[20%] max-md:rounded-none shadow-md mx-auto items-center   p-6  rounded-[10px] flex flex-row justify-between  bg-white border-white text-indi 
         
         "> 
           <div className=''>
