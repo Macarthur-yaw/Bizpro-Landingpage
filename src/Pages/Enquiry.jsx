@@ -25,7 +25,7 @@ Businesses generally promote their brand, products, and services by identifying 
 </div>
 
 <div>
-    <img src={Picture} className='w-[353px] h-[436px] absolute top-[557.5vh]'/>
+    <img src={Picture} className='w-[353px] h-[436px] absolute top-[542.5vh]'/>
 </div>
         </div>
         </div>

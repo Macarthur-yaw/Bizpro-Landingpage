@@ -8,7 +8,7 @@ import Side4 from "../assets/Ellipse 11.png"
 
 const Body = () => {
     return ( 
-        <div className="flex flex-row gap-4 items-center justify-around ">
+        <div className="flex flex-row   gap-4 items-center justify-around ">
           <div className="flex flex-col gap-4 text-indi  w-1/3  h-full ">
 <span className='inline-block'>
     
@@ -45,11 +45,11 @@ will to execute them – Seth Godin
 
 <div>
 
-<img src={Side1} alt='side one' className='absolute top-[40vh] left-1/3'/>
+<img src={Side1} alt='side one' className='absolute max-md:w-[20%] top-[40vh] left-1/3'/>
 
-<img src={Side2} alt='side two'className='absolute top-1/2 right-10' />
+<img src={Side2} alt='side two'className='absolute top-1/2 right-10 max-md:w-[20%]' />
 
-<img src={Side3} alt='side three'className='absolute left-[55%] top-[82vh]' />
+<img src={Side3} alt='side three'className='absolute left-[55%] top-[82vh] max-md:w-[20%]' />
 
 <img src={Background1} alt="welcome"  className="w-full" />
 </div>

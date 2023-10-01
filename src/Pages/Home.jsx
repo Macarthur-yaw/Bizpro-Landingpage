@@ -32,8 +32,8 @@ const Home = () => {
 
     return ( 
 
-        <div className="flex flex-col max-md:p-0 p-10 py-6 " style={{backgroundColor:"#ECF9FF"}}>
-            <div className="sm:p-8 ">
+        <div className="flex flex-col  p-10 py-6 " style={{backgroundColor:"#ECF9FF"}}>
+            <div className="p-4 ">
             <Navbar/>
 
 
@@ -43,7 +43,7 @@ const Home = () => {
             ref={ref} 
             variants={bodyControls}
             animate={controls}
-            className="sm:p-8">
+            className="p-4">
 <Body id='Home'/>
             </motion.div>
   
