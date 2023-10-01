@@ -12,7 +12,7 @@ const Body = () => {
           <div className="flex flex-col gap-4 text-indi  w-1/3  h-full ">
 <span className='inline-block'>
     
-<h1 className=" text-indi font-bold text-[50px]  ">Perfect place for your business promotion
+<h1 className=" text-indi font-bold text-[50px] max-sm:text-[12px] max-sm:hidden ">Perfect place for your business promotion
 </h1>
 {/* <img src={handEmoji} alt='peace symbol' className='w-8 h-8 inline mr-4' /> */}
 
