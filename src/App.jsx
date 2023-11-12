@@ -1,14 +1,12 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
-import Home from './Navbar/Home'
-import Process from './Navbar/Process'
-import About from './Navbar/About'
-import Services from './Navbar/Services'
-import Communication from './Navbar/Communication'
-import Enquiry from './Navbar/Enquiry'
-import Footer from './Navbar/Footer'
+import Home from './Pages/Home'
+import Process from './Pages/Process'
+import About from './Pages/About'
+import Services from './Pages/Services'
+import Communication from './Pages/Communication'
+import Enquiry from './Pages/Enquiry'
+import Footer from './Pages/Footer'
 import {Element} from 'react-scroll'
 function App() {
   return (
