@@ -3,7 +3,7 @@ import Body from "./Body";
 import {motion,useAnimation} from 'framer-motion'
 // import { useInView } from "framer-motion";
 import {useInView} from 'react-intersection-observer'
-import { useEffect } from "react";
+import { useEffect,useState } from "react";
 
 const Home = () => {
     const controls=useAnimation();
@@ -29,12 +29,19 @@ const Home = () => {
             controls.start("hidden")
         }
     },[inView,controls])
+const[dispValue,setDispValue]=useState(null)
+    function handleChange(data){
+setDispValue(data)
+    }
+    useEffect(()=>{
+console.log('ejeje');
 
+    },[])
     return ( 
 
-        <div className="flex flex-col  md:p-10 md:py-6 " style={{backgroundColor:"#ECF9FF"}}>
+        <div className={`flex flex-col  md:p-10 md:py-6 ${dispValue ? 'bg-black bg-opacity-10':''}`} style={{backgroundColor:"#ECF9FF"}}>
             <div className="md:p-4 ">
-            <Navbar/>
+            <Navbar handleChange={handleChange}/>
 
 
             </div>
