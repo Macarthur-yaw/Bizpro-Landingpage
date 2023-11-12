@@ -8,10 +8,17 @@ import Communication from './Pages/Communication'
 import Enquiry from './Pages/Enquiry'
 import Footer from './Pages/Footer'
 import {Element} from 'react-scroll'
+import { createContext, useState } from 'react'
+
+const OverLayContext=createContext();
+
 function App() {
+const [disp,setDisp]=useState(false);
+
   return (
     <>
       <div className='flex flex-col gap-20'>
+<OverLayContext.Provider value={{disp,setDisp}}>
   <Element name='Home'>
   <Home />
     
@@ -45,8 +52,10 @@ function App() {
   <Element name='Footer'>
      <Footer id='Footer'/>
      </Element>
+     </OverLayContext.Provider>
       </div>
     </>
   )
 }
 export default App
+export {OverLayContext};

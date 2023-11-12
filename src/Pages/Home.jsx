@@ -3,12 +3,13 @@ import Body from "./Body";
 import {motion,useAnimation} from 'framer-motion'
 // import { useInView } from "framer-motion";
 import {useInView} from 'react-intersection-observer'
-import { useEffect,useState } from "react";
+import { useContext, useEffect,useState } from "react";
+import { OverLayContext } from "../App";
 
 const Home = () => {
     const controls=useAnimation();
     const[ref,inView]=useInView()
-
+const {disp,setDisp}=useContext(OverLayContext)
     
     const bodyControls={
         hidden:{
@@ -29,22 +30,19 @@ const Home = () => {
             controls.start("hidden")
         }
     },[inView,controls])
-const[dispValue,setDispValue]=useState(null)
-    function handleChange(data){
-setDispValue(data)
-    }
-    useEffect(()=>{
-console.log('ejeje');
 
-    },[])
     return ( 
 
-        <div className={`flex flex-col  md:p-10 md:py-6 ${dispValue ? 'bg-black bg-opacity-10':''}`} style={{backgroundColor:"#ECF9FF"}}>
+        <div onClick={()=>setDisp(false)} className={`flex flex-col  md:p-10 md:py-6  bg-[#ECF9FF]`} style={{backgroundColor:""}}>
             <div className="md:p-4 ">
-            <Navbar handleChange={handleChange}/>
+            <Navbar />
 
 
             </div>
+
+<div className={`${disp ? 'bg-black bg-opacity-40 w-full h-screen fixed z-10':''}`}>
+
+</div>
 
             <motion.div
             ref={ref} 
