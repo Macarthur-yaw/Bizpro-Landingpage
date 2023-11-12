@@ -18,12 +18,12 @@ const ServiceCard = (props) => {
               </div>
                 <div id="users" className="flex flex-row justify-between w-full p-2">
 
-                  <h2 className="text-[12px] font-semibold">
+                  <h2 className="text-[10px] font-semibold">
                   99k+ users 
                   </h2>
 
 
-<h2 className="font-semibold text-[#00E5CC] text-[12px]">
+<h2 className="font-semibold text-[#00E5CC] text-[10px]">
 $140.00
 
 </h2>

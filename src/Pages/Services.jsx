@@ -8,7 +8,7 @@ import {motion} from 'framer-motion'
 const Services = () => {
     return (
 
-        <div className="p-8 flex flex-col gap-8 bg-[#ECF9FF] md:h-[781px]">
+        <div className="p-4 flex flex-col gap-8 bg-[#ECF9FF] md:h-[781px]">
 
 <div className="flex flex-row w-full  justify-between">
     <h1 className="md:text-[45px] text-[20px] p-4 font-bold text-[#060640]">Popular packages</h1>

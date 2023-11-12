@@ -18,14 +18,14 @@ Businesses generally promote their brand, products, and services by identifying 
 {/* height: 78px; */}
 <div id="inputSection" className="md:w-[600px] md:h-[78px] flex flex-row items-center rounded-[6px] border-2 border-white w-fit ">
 
-<input type="text" placeholder="Enter your email here" className=" md:w-[690px] md:h-full text-[16px] px-6"/>
+<input type="text" placeholder="Enter your email here" className=" md:w-[690px] md:h-full text-[16px] px-6 p-2"/>
 
 <input type="submit"  className="block text-sm md:absolute p-4 left-[42%] md:h-[60px] py-2 rounded-[6px] bg-[#060640] text-white text-center text-[14px] md:w-[150px] cursor-pointer w-[20%]"/>
 </div>
 </div>
 
-<div>
-    <img src={Picture} className='w-[353px] h-[436px] absolute top-[542.5vh]'/>
+<div className='hidden md:block'>
+    <img src={Picture} className='md:w-[353px] md:h-[436px] md:absolute top-[542.5vh]'/>
 </div>
         </div>
         </div>

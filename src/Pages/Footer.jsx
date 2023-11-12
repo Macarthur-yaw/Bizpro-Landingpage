@@ -26,9 +26,9 @@ This is big one and i consider it one of the most important things for a busines
 
 <div id="footer2" className='flex flex-col gap-2'>
 
-  <h1>Quick Links</h1>
+  <h1 className='text-[12px]'>Quick Links</h1>
 
-  <ul className='text-[#9090A7] text-sm flex flex-col gap-[5px] list-none'>
+  <ul className='text-[#9090A7] text-[10px] flex flex-col gap-[5px] list-none '>
     <li>Home</li>
     <li>About</li>
     <li>Appointment</li>
@@ -40,9 +40,9 @@ This is big one and i consider it one of the most important things for a busines
 
 <div id="footer3" className='flex flex-col gap-2'>
 
-<h1>Company</h1>
+<h1 className='text-[12px]'>Company</h1>
 
-<ul className='text-[#9090A7] text-sm flex flex-col gap-[5px] list-none'>
+<ul className='text-[#9090A7] text-[10px]  flex flex-col gap-[5px] list-none'>
   {/* <li>Home</li> */}
   <li>About</li>
   <li>Contact</li>
@@ -53,9 +53,9 @@ This is big one and i consider it one of the most important things for a busines
 </div>
 
 <div id="footer4" className=' flex flex-col gap-2'>
-<h1>Information</h1>
+<h1 className='text-[12px]'>Information</h1>
 
-<ul className='text-[#9090A7] text-sm flex flex-col gap-[5px] list-none'>
+<ul className='text-[#9090A7] text-[10px] flex flex-col gap-[5px] list-none'>
   {/* <li>Home</li> */}
   {/* <li>About</li> */}
   <li>Privacy Policy</li>
@@ -67,7 +67,7 @@ This is big one and i consider it one of the most important things for a busines
 
 
 </div>
-<div id='belowFooter' className='flex flex-row justify-between md:px-[136px] py-[27px] bg-[#000020] md:h-[80px] px-10 text-sm'>
+<div id='belowFooter' className='flex flex-row text-[12px] justify-between md:px-[136px] py-[27px] bg-[#000020] md:h-[80px] px-10 '>
 <h1>Copyright &copy; 2021 Bizpro</h1>
 <h1>All Rights Reserved</h1>
 </div>
