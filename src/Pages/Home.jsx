@@ -32,8 +32,8 @@ const Home = () => {
 
     return ( 
 
-        <div className="flex flex-col  p-10 py-6 " style={{backgroundColor:"#ECF9FF"}}>
-            <div className="p-4 ">
+        <div className="flex flex-col  md:p-10 md:py-6 " style={{backgroundColor:"#ECF9FF"}}>
+            <div className="md:p-4 ">
             <Navbar/>
 
 

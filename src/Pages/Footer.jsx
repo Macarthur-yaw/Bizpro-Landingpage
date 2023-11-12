@@ -2,24 +2,24 @@ import { FaInstagram,FaFacebook,FaTwitter,FaLinkedin} from 'react-icons/fa'
 const Footer = () => {
     return (
       <div className='bg-[#060640] flex flex-col text-white'>
-        <div className="bg-[#060640] flex flex-row text-white justify-between p-8 items-start">
+        <div className="bg-[#060640] flex flex-row text-white gap-4 justify-between p-6 items-start">
     
-<div id="footer1" className='flex flex-col gap-2 '>
-
-<h1 className='text-4xl font-semibold'>
+<div id="footer1" className='flex flex-col hidden md:block gap-2 '>
+<span className='flex flex-col gap-2 '>
+<h1 className='md:text-4xl font-semibold'>
   Bizpro
 </h1>
 
-<h3 className='text-[#9090A7] w-[350px] text-[16px]'>
+<h3 className='text-[#9090A7] md:w-[350px] md:text-[16px]'>
 This is big one and i consider it one of the most important things for a business. 
 </h3>
-
+</span>
 <div id='footerIcons' className='flex flex-row gap-2'>
   
-<FaFacebook className='border-[1px] rounded-[50%] p-2 text-3xl text-[#9090A7] border-[#9090A7]'/>
-<FaInstagram className='border-[1px]  rounded-[50%] p-2 text-3xl text-[#9090A7] border-[#9090A7]'/>
-<FaTwitter className='border-[1px]  rounded-[50%] p-2 text-3xl text-[#9090A7] border-[#9090A7]'/>
-<FaLinkedin className='border-[1px]  rounded-[50%] p-2 text-3xl text-[#9090A7] border-[#9090A7]'/>
+<FaFacebook className='border-[1px] rounded-[50%] p-2 md:text-3xl text-[#9090A7] border-[#9090A7]'/>
+<FaInstagram className='border-[1px]  rounded-[50%] p-2 md:text-3xl text-[#9090A7] border-[#9090A7]'/>
+<FaTwitter className='border-[1px]  rounded-[50%] p-2 md:text-3xl text-[#9090A7] border-[#9090A7]'/>
+<FaLinkedin className='border-[1px]  rounded-[50%] p-2 md:text-3xl text-[#9090A7] border-[#9090A7]'/>
 </div>
 
 </div>
@@ -28,7 +28,7 @@ This is big one and i consider it one of the most important things for a busines
 
   <h1>Quick Links</h1>
 
-  <ul className='text-[#9090A7] flex flex-col gap-[5px]'>
+  <ul className='text-[#9090A7] text-sm flex flex-col gap-[5px] list-none'>
     <li>Home</li>
     <li>About</li>
     <li>Appointment</li>
@@ -42,7 +42,7 @@ This is big one and i consider it one of the most important things for a busines
 
 <h1>Company</h1>
 
-<ul className='text-[#9090A7] flex flex-col gap-[5px]'>
+<ul className='text-[#9090A7] text-sm flex flex-col gap-[5px] list-none'>
   {/* <li>Home</li> */}
   <li>About</li>
   <li>Contact</li>
@@ -55,7 +55,7 @@ This is big one and i consider it one of the most important things for a busines
 <div id="footer4" className=' flex flex-col gap-2'>
 <h1>Information</h1>
 
-<ul className='text-[#9090A7] flex flex-col gap-[5px]'>
+<ul className='text-[#9090A7] text-sm flex flex-col gap-[5px] list-none'>
   {/* <li>Home</li> */}
   {/* <li>About</li> */}
   <li>Privacy Policy</li>
@@ -67,7 +67,7 @@ This is big one and i consider it one of the most important things for a busines
 
 
 </div>
-<div id='belowFooter' className='flex flex-row justify-between px-[136px] py-[27px] bg-[#000020] h-[80px]'>
+<div id='belowFooter' className='flex flex-row justify-between md:px-[136px] py-[27px] bg-[#000020] md:h-[80px] px-10 text-sm'>
 <h1>Copyright &copy; 2021 Bizpro</h1>
 <h1>All Rights Reserved</h1>
 </div>

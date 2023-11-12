@@ -49,7 +49,7 @@ else{
         }
     }
     return (
-        <div className='flex md:flex-row  flex-col p-16  gap-10 md:items-center justify-between'>
+        <div className='flex md:flex-row  flex-col md:p-16   gap-10 items-center justify-between'>
     < motion.div
     animate={controls}
     ref={ref} 
@@ -64,15 +64,15 @@ id="mainHeader">
     </h1>
 </div>
 
-<div id="subHeader" className='md:text-[16px] text-sm text-[#9090A7]  md:w-[431px]'>
+<div id="subHeader" className='md:text-[16px] w-[80%] text-sm text-[#9090A7]  md:w-[431px]'>
 No wonder that promotion strategy is one of the most important processes in marketing.
 In fact, it supports your marketing voices to reach your target audience, creates interest, and helps you to engage with them.
 
 </div>
 
 
-<div className='flex flex-col gap-4 items-center'>
-<div id="itemOne " className='flex flex-row  items-center gap-4'>
+<div className='flex flex-col gap-4 md:items-center '>
+<div id="itemOne " className='flex flex-row  md:items-center gap-4'>
 
 {/* <Shield/> */}
     <img src={Shield} alt='an svg icon of a shield' className='border-2 border-[#ECF9FF] md:w-30 md:h-30 p-4 rounded-md bg-[#ECF9FF]'/>
